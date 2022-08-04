@@ -9,7 +9,7 @@ class Solution {
     
     void combination(int ind,int[] arr,boolean[] visited,List<List<Integer>> ans, ArrayList<Integer> ds){
         if(ds.size()==arr.length){
-            if(ans.contains(ds)) return;
+            //if(ans.contains(ds)) return;
             ans.add(new ArrayList<>(ds));
             return;
         }
