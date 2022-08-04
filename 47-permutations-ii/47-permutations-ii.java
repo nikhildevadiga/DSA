@@ -1,6 +1,6 @@
 class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
-        
+        Arrays.sort(nums);
         List<List<Integer>> ans=new ArrayList<>();
         boolean visited[]=new boolean[nums.length];
         combination(0,nums,visited, ans, new ArrayList<>());
